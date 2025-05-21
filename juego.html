@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="juego.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <div id="general-cuadro">
+        <h3>General</h3>
+        <img id="general-imagen" src="" alt="">
+        <p id="general-nombre"></p>
+        <div id="recursos">
+            <div class="recurso">
+                <label>Minerales</label>
+                <div class="progress-bar"><div id="minerales-bar" class="progress-fill minerales"></div></div>
+                <span id="minerales-valor"></span>
+            </div>
+            <div class="recurso">
+                <label>Combustibles</label>
+                <div class="progress-bar"><div id="combustibles-bar" class="progress-fill combustibles"></div></div>
+                <span id="combustibles-valor"></span>
+            </div>
+            <div class="recurso">
+                <label>Energía</label>
+                <div class="progress-bar"><div id="energia-bar" class="progress-fill energia"></div></div>
+                <span id="energia-valor"></span>
+            </div>
+        </div>
+    </div>
+    <div id="planeta-rectangulo">
+        <div id="planeta-imagen-contenedor">
+            <img id="planeta-imagen" src="" alt="">
+        </div>
+        <p id="planeta-nombre"></p>
+    </div>
+    <div id="zona-eventos"></div>
+    <div id="botones" class="botones-container">
+        <button class="neon-button" disabled>Cargando...</button>
+        <button class="neon-button" disabled>Cargando...</button>
+        <button class="neon-button" disabled>Cargando...</button>
+        <button class="neon-button" disabled>Cargando...</button>
+    </div>
+    <script src="galaxias.js"></script>
+    <script src="investigaciones.js"></script>
+    <script src="botones.js"></script>
+    <script src="juego.js"></script>
+</body>
+</html>
