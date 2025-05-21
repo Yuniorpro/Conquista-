@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenida - Juego Épico</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Exo+2:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-animation"></div>
+    <header class="neon-glow">
+        <h1>Bienvenido a Juego Épico</h1>
+        <p>¡Conecta tu cuenta y lidera la galaxia!</p>
+    </header>
+
+    <main>
+        <!-- Sección de Acceso -->
+        <section id="acceso" class="holo-card">
+            <h2>Acceso al Sistema</h2>
+            
+            <!-- Formulario de Inicio de Sesión -->
+            <div id="login">
+                <h3>Iniciar Sesión</h3>
+                <form id="form-login">
+                    <label for="nombre-usuario">Nombre de Usuario:</label>
+                    <input type="text" id="nombre-usuario" name="nombre" required placeholder="Ej: CiberGuerrero">
+                    <label for="contrasena-login">Contraseña:</label>
+                    <input type="password" id="contrasena-login" name="contrasena" required placeholder="********">
+                    <button type="submit" class="neon-button">Conectar</button>
+                </form>
+            </div>
+            
+            <!-- Formulario de Registro -->
+            <div id="registro">
+                <h3>Crear Nueva Cuenta</h3>
+                <form id="form-registro">
+                    <label for="nombre-jugador">Nombre de Jugador:</label>
+                    <input type="text" id="nombre-jugador" name="nombre" required placeholder="Ej: CiberGuerrero">
+                    <label for="email-jugador">Correo Electrónico (opcional):</label>
+                    <input type="email" id="email-jugador" name="email" placeholder="tu@galaxia.com">
+                    <label for="contrasena-registro">Contraseña:</label>
+                    <input type="password" id="contrasena-registro" name="contrasena" required placeholder="********">
+                    <label for="confirmar-contrasena">Confirmar Contraseña:</label>
+                    <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required placeholder="********">
+                    <button type="submit" class="neon-button">Crear Cuenta</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Sección de Selección de Facciones -->
+        <section id="facciones" class="holo-card oculta">
+            <h2>Elige tu Facción</h2>
+            <div id="opciones-facciones">
+                <div class="faccion">
+                    <h3>Imperio Galáctico</h3>
+                    <img src="/Imperio.jpg" alt="Imperio Galáctico" class="faccion-img">
+                    <p>Gobernantes autoritarios de la galaxia, expertos en control y poder militar.</p>
+                    <button data-faccion="imperio" class="neon-button">Elegir Imperio</button>
+                </div>
+                <div class="faccion">
+                    <h3>República de las Estrellas</h3>
+                    <img src="/Republica.jpg" alt="República de las Estrellas" class="faccion-img">
+                    <p>Defensores de la libertad, especializados en diplomacia y tecnología.</p>
+                    <button data-faccion="republica" class="neon-button">Elegir República</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Selección de Generales -->
+        <section id="generales" class="holo-card oculta">
+            <h2>Elige tu General</h2>
+            <div id="lista-generales"></div>
+            <button id="confirmar-seleccion" class="neon-button" disabled>Confirmar Selección</button>
+        </section>
+    </main>
+
+    <footer class="neon-glow">
+        <p>© 2568 Juego Épico. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="galaxias.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
